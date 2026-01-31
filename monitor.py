@@ -1,46 +1,37 @@
 import os
 import time
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
 
-class MyMonitor(FileSystemEventHandler):
-    def on_created(self, event):
-        print(f"📁 New file created: {event.src_path}")
-
-    def on_deleted(self, event):
-        print(f"🗑️  File deleted: {event.src_path}")
-
-    def on_modified(self, event):
-        print(f"✏️  File modified: {event.src_path}")
-
-# Start monitoring
-if __name__ == "__main__":
-    print("=== Directory Monitoring System Started ===")
-
-    # Directory to monitor (test_folder in the current directory)
-    monitor_dir = "./test_folder"
-
-    # Create the directory if it does not exist
-    if not os.path.exists(monitor_dir):
-        os.makedirs(monitor_dir)
-        print(f"Monitoring directory created: {monitor_dir}")
-
-    print(f"Monitoring path: {os.path.abspath(monitor_dir)}")
-    print("Press Ctrl+C to stop monitoring")
+def monitor_directory(path):
+    print("=== Monitor Started ===")
+    print(f"Monitoring: {os.path.abspath(path)}")
+    print("Press Ctrl+C to stop")
     print("-" * 40)
 
-    # Set up monitoring
-    event_handler = MyMonitor()
-    observer = Observer()
-    observer.schedule(event_handler, monitor_dir, recursive=True)
-    observer.start()
+    previous_files = set(os.listdir(path))
 
     try:
         while True:
             time.sleep(1)
-    except KeyboardInterrupt:
-        print("\nStopping monitoring...")
-        observer.stop()
+            current_files = set(os.listdir(path))
 
-    observer.join()
-    print("Monitoring stopped")
+            # New files
+            for file in current_files - previous_files:
+                print(f"📁 New file: {file}")
+
+            # Deleted files
+            for file in previous_files - current_files:
+                print(f"🗑️  Deleted file: {file}")
+
+            previous_files = current_files
+
+    except KeyboardInterrupt:
+        print("\nMonitoring stopped")
+
+if __name__ == "__main__":
+    monitor_dir = "./test_folder"
+
+    if not os.path.exists(monitor_dir):
+        os.makedirs(monitor_dir)
+        print(f"Created directory: {monitor_dir}")
+
+    monitor_directory(monitor_dir)
