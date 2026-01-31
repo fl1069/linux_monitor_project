@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import psutil #toolsssssssssssssssssssssssssssss
 
 #log file loaction
@@ -30,5 +31,12 @@ for p in psutil.process_iter():
              sleeping_process.append(p)
 sleeping_process_count = len(sleeping_process)
 
-with open(log_file,'w') as f:
-     f.write(str(cpu_usage_percentage))
+top_cpu = sorted(
+    [(p.cpu_percent(0.1), p.pid, p.name()) for p in psutil.process_iter()[:80]],
+    reverse=True
+)[:3]
+
+top_mem = sorted(
+    [(p.memory_info().rss, p.pid, p.name()) for p in psutil.process_iter()[:80]],
+    reverse=True
+)[:3]
