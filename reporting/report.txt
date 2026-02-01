@@ -1,0 +1,10 @@
+===SYSTEM REPORT===
+
+cpu usage percentage:[0.0, 1.0]
+cpu load average:(0.0546875, 0.13623046875, 0.08544921875)
+Number of running process:1
+
+Total memory:3.82GB
+Total memory used:0.94GB
+Total memory available:2.63GB
+Memory usage percentage:31.4
