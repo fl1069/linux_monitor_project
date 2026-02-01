@@ -3,6 +3,8 @@ import sys
 import os
 sys.path.append('..')
 from system_monitoring import System_Monitoring as sm
+from directory_monitor import dir_monitor as dm
+
 
 report = "/home/aix/linux_monitor_project/reporting/report.txt"
 if not os.path.exists(report):
@@ -31,3 +33,8 @@ with open(report, 'w') as f:
      f.write(f"Top Memory process 1: PID:{sm.top_mem[0][1]} {sm.top_mem[0][2]} {sm.top_mem[0][0]/ (1024**3):.2f}GB\n")
      f.write(f"Top Memory process 2: PID:{sm.top_mem[1][1]} {sm.top_mem[1][2]} {sm.top_mem[1][0]/ (1024**3):.2f}GB\n")
      f.write(f"Top Memory process 3: PID:{sm.top_mem[2][1]} {sm.top_mem[2][2]} {sm.top_mem[2][0]/ (1024**3):.2f}GB\n")
+     f.write("\n--- DIRECTORY MONITORING ---\n")
+     f.write(f"\nMonitored directory: {dm.monitor_directory}\n")
+     f.write(f"Total files in directory: {dm.total_files}\n")
+     f.write(f"Recent directory events:\n{dm.recent_logs}\n") 
+     f.write("\n===END OF REPORT===\n")
