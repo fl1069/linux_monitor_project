@@ -1,10 +1,24 @@
 ===SYSTEM REPORT===
 
-cpu usage percentage:[0.0, 1.0]
-cpu load average:(0.0546875, 0.13623046875, 0.08544921875)
+cpu usage percentage:[1.0, 0.0]
+cpu load average:(0.01513671875, 0.0224609375, 0.0400390625)
 Number of running process:1
 
 Total memory:3.82GB
 Total memory used:0.94GB
-Total memory available:2.63GB
-Memory usage percentage:31.4
+Total memory available:2.62GB
+Memory usage percentage:31.5
+Disk total:24.44GB
+Disk used:11.88GB
+Disk free:11.29GB
+Disk usage percentage:51.3
+System uptime:10.81 hours
+System idle time:21.31 hours
+Total processes:209
+Number of running vs sleeping processes:1vs150
+Top CPU process 1: PID:848 snapd 0.0%
+Top CPU process 2: PID:829 power-profiles-daemon 0.0%
+Top CPU process 3: PID:822 polkitd 0.0%
+Top Memory process 1: PID:848 snapd 0.04GB
+Top Memory process 2: PID:250 systemd-journald 0.03GB
+Top Memory process 3: PID:802 gnome-remote-desktop-daemon 0.02GB

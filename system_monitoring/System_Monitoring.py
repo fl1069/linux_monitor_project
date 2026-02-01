@@ -38,7 +38,7 @@ sleeping_process_count = len(sleeping_process)
 
 all_processes = list(psutil.process_iter())
 top_cpu = sorted(
-    [(p.cpu_percent(0.1), p.pid, p.name()) for p in all_processes[:80]],
+    [(p.cpu_percent(interval=None), p.pid, p.name()) for p in all_processes[:80]],
     reverse=True
 )[:3]
 
