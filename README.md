@@ -3,7 +3,13 @@ AAC_6164
 System Monitor
 Monitor Linux system metrics and generate reports.
 
-Quick Start
+Requiremnts:
+python3
+psutil
+pathlib
+
+
+How to use?
 pip install psutil
 cd reporting
 python3 rep_gen.py
