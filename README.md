@@ -22,3 +22,7 @@ Directory change tracking
 
 Output
 Report: report.txt
+
+⚠️NOTICE⚠️
+PLEASE READ crontab.config !!!
+PLESAE CHANGE THE PATH IN THE SCRIPT TO YOUR OWN PATH!!!
