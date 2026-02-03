@@ -1,0 +1,136 @@
+[2026-02-03 17:47:31] CPU_METRICS
+  cpu_usage: [2.0, 1.0]
+  load_average: (0.0, 0.04931640625, 0.0693359375)
+----------------------------------------
+[2026-02-03 17:47:31] MEMORY_METRICS
+  total_gb: 3.82 GB
+  used_gb: 0.78 GB
+  available_gb: 2.80 GB
+  usage_percent: 26.8%
+----------------------------------------
+[2026-02-03 17:47:31] DISK_METRICS
+  total_gb: 24.44 GB
+  used_gb: 12.26 GB
+  free_gb: 10.91 GB
+  usage_percent: 52.9%
+----------------------------------------
+[2026-02-03 17:47:31] SYSTEM_UPTIME
+  uptime_hours: 0.19
+  idle_hours: 0.37
+----------------------------------------
+[2026-02-03 17:47:31] PROCESS_METRICS
+  total_processes: 222
+  running_processes: 2
+  sleeping_processes: 165
+----------------------------------------
+[2026-02-03 17:47:31] TOP_CPU_PROCESSES
+  ['PID:304 irq/18-vmwgfx 0.0%', 'PID:250 systemd-journald 0.0%', 'PID:202 kworker/R-ext4-rsv-conversion 0.0%']
+----------------------------------------
+[2026-02-03 17:47:31] TOP_MEMORY_PROCESSES
+  ['PID:250 systemd-journald 0.02 GB', 'PID:1 systemd 0.01 GB', 'PID:304 irq/18-vmwgfx 0.00 GB']
+----------------------------------------
+[2026-02-03 17:47:31] SYSTEM_MONITORING_COMPLETED
+  Collected all metrics at 2026-02-03 17:47:31
+----------------------------------------
+[2026-02-03 17:47:44] CPU_METRICS
+  cpu_usage: [0.0, 0.0]
+  load_average: (0.0, 0.04638671875, 0.06787109375)
+----------------------------------------
+[2026-02-03 17:47:44] MEMORY_METRICS
+  total_gb: 3.82 GB
+  used_gb: 0.78 GB
+  available_gb: 2.80 GB
+  usage_percent: 26.8%
+----------------------------------------
+[2026-02-03 17:47:44] DISK_METRICS
+  total_gb: 24.44 GB
+  used_gb: 12.26 GB
+  free_gb: 10.91 GB
+  usage_percent: 52.9%
+----------------------------------------
+[2026-02-03 17:47:44] SYSTEM_UPTIME
+  uptime_hours: 0.20
+  idle_hours: 0.38
+----------------------------------------
+[2026-02-03 17:47:44] PROCESS_METRICS
+  total_processes: 210
+  running_processes: 3
+  sleeping_processes: 153
+----------------------------------------
+[2026-02-03 17:47:44] TOP_CPU_PROCESSES
+  ['PID:304 irq/18-vmwgfx 0.0%', 'PID:250 systemd-journald 0.0%', 'PID:202 kworker/R-ext4-rsv-conversion 0.0%']
+----------------------------------------
+[2026-02-03 17:47:44] TOP_MEMORY_PROCESSES
+  ['PID:250 systemd-journald 0.02 GB', 'PID:1 systemd 0.01 GB', 'PID:304 irq/18-vmwgfx 0.00 GB']
+----------------------------------------
+[2026-02-03 17:47:44] SYSTEM_MONITORING_COMPLETED
+  Collected all metrics at 2026-02-03 17:47:44
+----------------------------------------
+[2026-02-03 17:57:31] CPU_METRICS
+  cpu_usage: [1.0, 1.0]
+  load_average: (0.009765625, 0.02587890625, 0.044921875)
+----------------------------------------
+[2026-02-03 17:57:31] MEMORY_METRICS
+  total_gb: 3.82 GB
+  used_gb: 0.79 GB
+  available_gb: 2.79 GB
+  usage_percent: 27.1%
+----------------------------------------
+[2026-02-03 17:57:31] DISK_METRICS
+  total_gb: 24.44 GB
+  used_gb: 12.26 GB
+  free_gb: 10.91 GB
+  usage_percent: 52.9%
+----------------------------------------
+[2026-02-03 17:57:31] SYSTEM_UPTIME
+  uptime_hours: 0.36
+  idle_hours: 0.70
+----------------------------------------
+[2026-02-03 17:57:31] PROCESS_METRICS
+  total_processes: 222
+  running_processes: 1
+  sleeping_processes: 165
+----------------------------------------
+[2026-02-03 17:57:31] TOP_CPU_PROCESSES
+  ['PID:377 systemd-oomd 0.0%', 'PID:327 systemd-udevd 0.0%', 'PID:305 kworker/R-ttm 0.0%']
+----------------------------------------
+[2026-02-03 17:57:31] TOP_MEMORY_PROCESSES
+  ['PID:250 systemd-journald 0.02 GB', 'PID:1 systemd 0.01 GB', 'PID:327 systemd-udevd 0.01 GB']
+----------------------------------------
+[2026-02-03 17:57:31] SYSTEM_MONITORING_COMPLETED
+  Collected all metrics at 2026-02-03 17:57:31
+----------------------------------------
+[2026-02-03 18:08:51] CPU_METRICS
+  cpu_usage: [2.0, 2.0]
+  load_average: (0.00390625, 0.03955078125, 0.04052734375)
+----------------------------------------
+[2026-02-03 18:08:51] MEMORY_METRICS
+  total_gb: 3.82 GB
+  used_gb: 0.86 GB
+  available_gb: 2.73 GB
+  usage_percent: 28.7%
+----------------------------------------
+[2026-02-03 18:08:51] DISK_METRICS
+  total_gb: 24.44 GB
+  used_gb: 12.26 GB
+  free_gb: 10.91 GB
+  usage_percent: 52.9%
+----------------------------------------
+[2026-02-03 18:08:51] SYSTEM_UPTIME
+  uptime_hours: 0.55
+  idle_hours: 1.07
+----------------------------------------
+[2026-02-03 18:08:51] PROCESS_METRICS
+  total_processes: 205
+  running_processes: 1
+  sleeping_processes: 148
+----------------------------------------
+[2026-02-03 18:08:52] TOP_CPU_PROCESSES
+  ['PID:384 systemd-resolved 0.0%', 'PID:377 systemd-oomd 0.0%', 'PID:327 systemd-udevd 0.0%']
+----------------------------------------
+[2026-02-03 18:08:52] TOP_MEMORY_PROCESSES
+  ['PID:250 systemd-journald 0.02 GB', 'PID:1 systemd 0.01 GB', 'PID:384 systemd-resolved 0.01 GB']
+----------------------------------------
+[2026-02-03 18:08:52] SYSTEM_MONITORING_COMPLETED
+  Collected all metrics at 2026-02-03 18:08:52
+----------------------------------------

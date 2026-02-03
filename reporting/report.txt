@@ -1,0 +1,43 @@
+===SYSTEM REPORT===
+
+cpu usage percentage:[2.0, 2.0]
+cpu load average:(0.00390625, 0.03955078125, 0.04052734375)
+Number of running process:1
+
+Total memory:3.82GB
+Total memory used:0.86GB
+Total memory available:2.73GB
+Memory usage percentage:28.7
+Disk total:24.44GB
+Disk used:12.26GB
+Disk free:10.91GB
+Disk usage percentage:52.9
+System uptime:0.55 hours
+System idle time:1.07 hours
+Total processes:205
+Number of running vs sleeping processes:1vs148
+Top CPU process 1: PID:384 systemd-resolved 0.0%
+Top CPU process 2: PID:377 systemd-oomd 0.0%
+Top CPU process 3: PID:327 systemd-udevd 0.0%
+Top Memory process 1: PID:250 systemd-journald 0.02GB
+Top Memory process 2: PID:1 systemd 0.01GB
+Top Memory process 3: PID:384 systemd-resolved 0.01GB
+
+--- DIRECTORY MONITORING ---
+
+Monitored directory: /home/aix/linux_monitor_project/monitored_directory
+Total files in directory: 0
+Recent directory events:
+----------------------------------------
+[2026-02-03 18:06:18] FILE MODIFIED: testfile.txt
+  Type: regular file
+  Size: 6 bytes
+  Permissions: 755
+  Modified: 2026-02-03 18:05:57
+  Previous: size:0->6, perms:664->755, mtime:2026-02-03 18:04:28->2026-02-03 18:05:57
+----------------------------------------
+[2026-02-03 18:07:18] FILE DELETED: testfile.txt
+----------------------------------------
+
+
+===END OF REPORT===
